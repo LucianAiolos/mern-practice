@@ -26,4 +26,5 @@ mongoose
 
 app.listen(PORT, ()=> console.log('Listening on port ', PORT))
 
-console.log(process.env.ATLAS_URI)
+// console.log(process.env.ATLAS_URI)
+

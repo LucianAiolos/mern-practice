@@ -1,5 +1,5 @@
 // const { default: mongoose } = require('mongoose') dont' need this
-const memberModel = require('../models/memberModel')
+const Member = require('../models/memberModel')
 // const mongoose = require('mongoose') don't need this
 
 const getMembers = (req, res) => {
@@ -10,7 +10,7 @@ const getMembers = (req, res) => {
 const addMember = (req, res) => {
   console.log('adding member')
   // console.log(req.body.name)
-  const memberItem = new memberModel({
+  const memberItem = new Member({
     name: req.body.name,
     goldStatus: req.body.goldStatus,
     club: req.body.club

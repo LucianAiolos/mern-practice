@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose')  // allows use of mongoose
 const Schema = mongoose.Schema
 // one more
 
@@ -8,4 +8,7 @@ const MemberSchema = new Schema({
   club: String,
 })
 
-module.exports = mongoose.model('Members', MemberSchema)
+module.exports = mongoose.model('Membership', MemberSchema)
+// when building a schema/model first time
+//------------------------------
+//   mongoose.model('this will be the schema/collection name', exporting this schema to use)
